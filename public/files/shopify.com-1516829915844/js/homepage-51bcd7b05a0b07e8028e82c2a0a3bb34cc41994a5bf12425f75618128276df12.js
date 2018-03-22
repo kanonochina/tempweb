@@ -1,0 +1,1 @@
+$(function(){var n=ShopifyMarketing.Carousel,e=$(".js-announcement");e.length&&new ShopifyMarketing.Announcement(e[0]),new n($("#HeroCarousel"),{duration:8e3}).start(),new n($("#MerchantsCarousel"),{currentIndex:1})});

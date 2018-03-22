@@ -1,0 +1,1023 @@
+/* Child styles */
+
+body.home .page-container.home-page .clearfix:before,
+body.home .page-container.home-page .clearfix:after,
+body.home .page-container.home-page .dl-horizontal dd:before,
+body.home .page-container.home-page .dl-horizontal dd:after,
+body.home .page-container.home-page .container:before,
+body.home .page-container.home-page .container:after,
+body.home .page-container.home-page .container-fluid:before,
+body.home .page-container.home-page .container-fluid:after,
+body.home .page-container.home-page .row:before,
+body.home .page-container.home-page .row:after,
+body.home .page-container.home-page .form-horizontal .form-group:before,
+body.home .page-container.home-page .form-horizontal .form-group:after,
+body.home .page-container.home-page .btn-toolbar:before,
+body.home .page-container.home-page .btn-toolbar:after,
+body.home .page-container.home-page .btn-group-vertical>.btn-group:before,
+body.home .page-container.home-page .btn-group-vertical>.btn-group:after,
+body.home .page-container.home-page .nav:before,
+body.home .page-container.home-page .nav:after,
+body.home .page-container.home-page .navbar:before,
+body.home .page-container.home-page .navbar:after,
+body.home .page-container.home-page .navbar-header:before,
+body.home .page-container.home-page .navbar-header:after,
+body.home .page-container.home-page .navbar-collapse:before,
+body.home .page-container.home-page .navbar-collapse:after,
+body.home .page-container.home-page .pager:before,
+body.home .page-container.home-page .pager:after,
+body.home .page-container.home-page .panel-body:before,
+body.home .page-container.home-page .panel-body:after,
+body.home .page-container.home-page .modal-header:before,
+body.home .page-container.home-page .modal-header:after,
+body.home .page-container.home-page .modal-footer:before,
+body.home .page-container.home-page .modal-footer:after {
+	content: "";
+	display: inherit;
+}
+ /* byline changes */
+/*
+.post-page .single-post-content .single-post-author > div p.author-name,
+.post-page .single-post-content .single-post-author > div p.author-name > a {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 0;
+}
+*/
+
+
+
+.post-page .single-post-content .single-post-author > div p.author-name > span.author-and {
+    color: #767676;
+    text-transform: lowercase !important;
+}
+
+
+
+
+
+/* Offset anchors from the top of the page by 150px */
+
+.tph_offset_anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+/* Email Privacy Policy Blurbs */
+
+.email-privacy-policy-blurb-white a {
+    color: #A084BF;
+    font-size: 10px;
+}
+
+.email-privacy-policy-blurb-purple a {
+    text-decoration: underline;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+p.email-privacy-policy-blurb-purple {
+    margin: 10px 0 0;
+}
+
+/* REV CONTENT */
+
+    .rc-item-wrapper .rc-content .rc-headline {
+        line-height: 1.42857143;
+        font-family: 'Crimson Text', serif;
+        font-size: 16px;
+        font-weight:200;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .rc-w-58318 > h3, .single-posts-recommended-sponsored {
+    	display:none;
+    }
+
+    .post-page .single-posts-recommended {
+        margin-bottom: 20px;
+    }
+
+    .rc-cta:hover .rc-headline {
+        text-decoration: none !important;
+    }
+
+    .rc-item-wrapper .rc-content .rc-headline:hover, .rc-w-58318.rc-p-pt .rc-cta:hover {
+        text-decoration: none !important;
+        /*border-bottom: 1px solid #2bbbb3;*/
+        color: #2bbbb3;
+    }
+
+    .rc-content {
+    	color: #337ab7;
+    }
+
+    .rc-headine:hover {
+    	color: #000;
+    }
+
+    .single-posts-recommended .rc-branding-label.rc-brand-content {
+    	    margin-top: 10px;
+    }
+
+
+/* Share Counts */
+
+    #share-numbers {
+        display: inline-block;
+        padding-left: 5px;
+        margin-top: 10px;
+    }
+
+    .share-numbers > .single-social {
+        border-right: 1px solid #eeeeee !important;
+        padding-right: 15px;
+    }
+
+    .share-numbers.fixed > .single-social {
+        border-right: none !important;
+    }
+
+    .share-numbers.fixed > #share-numbers {
+        display: none;
+    }
+
+    .share-count {
+        font-size: 1.75em;
+        line-height: 0;
+        color: #2bbbb3;
+    }
+
+    .share-text {
+        color: #484848;
+        font-size: .775em;
+        text-align: center;
+        display: block;
+        text-transform: uppercase;  
+    }
+
+/* Money In Your Pocket */
+
+    #money-in-your-pocket {
+        background-color: #4d4774;
+        width: 100%;
+        height: 140px;
+        margin-bottom: 30px;
+    }
+
+    #money-in-your-pocket p {
+        margin: 0;
+        display: none;
+    }
+
+    #money-in-your-pocket-thumbs {
+        padding: 1em;
+    }
+
+    #money-in-your-pocket-thumbs img {
+        cursor: pointer;
+    }
+
+    /* thumbs specificity override */
+    .post-page .single-post-content .single-post-content-inner img.money-in-your-pocket.thumbs-up, .post-page .single-post-content .single-post-content-inner img.money-in-your-pocket.thumbs-down {
+        display: inline-block;
+        padding: 0 50px;
+    }
+
+    .money-in-your-pocket-blurb {
+        font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+        font-size: 2.25em;
+        color: #FFF;
+        display: block;
+        line-height: 1.15em;
+        margin-bottom: 15px;
+    }
+
+
+    /* Email Signup */
+
+    #money-in-your-pocket-email .money-in-your-pocket-blurb {
+        font-size: 1.55em;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #money-in-your-pocket form {
+        position: relative;
+        width: 85%;
+        margin: 15px auto 0;
+    }
+
+    #money-in-your-pocket form .form-control {
+        border-radius: 0;
+    }
+
+    #money-in-your-pocket .input-group-btn {
+        position: initial;
+    }
+
+    #money-in-your-pocket form input[type="email"] {
+        background-color: #FFF;
+        height: 50px;
+        margin-bottom: 10px;
+        width: 100%;
+        padding-right: 84px !important;
+        display: inline-block;
+        float: left;
+    }
+
+    #money-in-your-pocket form input[type="submit"] {
+        position: absolute;
+        left: auto;
+        right: 0;
+        top: 0;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    #money-in-your-pocket form .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+        opacity: 100;
+    }
+
+    #money-in-your-pocket input[type="submit"] {
+        font-size: 20px;
+        border-radius: 0;
+        color: #fff;
+        background-color: #2bbbb3;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        outline: 0;
+        border: 0;
+        display: block;
+        text-transform: uppercase;
+        height: 50px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    img.money-in-your-pocket-hide {
+        position: absolute;
+        right: 25px;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+
+    #money-in-your-pocket .thumbs-up-error {
+        margin-top: 15px;
+    }
+
+    #money-in-your-pocket .thumbs-up-success {
+        margin-top: 50px;
+    }
+
+    /* Already subscribed */
+
+    #money-in-your-pocket .money-in-your-pocket-already-subscribed .thumbs-up-error {
+        margin: 0px!important;
+        display: inline-block!important;
+    }
+
+    #money-in-your-pocket .money-in-your-pocket-already-subscribed .money-in-your-pocket-blurb {
+        width: 85%;
+        margin: 0 auto;
+        line-height: 1.35em;
+        font-size: 1.475em;
+    }
+
+/* Flip Animation */
+
+    .card {
+      position: relative;
+      float: left;
+      width: 25%;
+      text-align: center;
+    }
+
+    .card__front,
+    .card__back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .card__front,
+    .card__back {
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-transition: -webkit-transform 1s;
+              transition: transform 1s;
+    }
+
+    .card__back {
+      -webkit-transform: rotateX(-180deg);
+              transform: rotateX(-180deg);
+    }
+
+    .card.effect__click.flipped .card__front {
+      -webkit-transform: rotateX(-180deg);
+              transform: rotateX(-180deg);
+    }
+
+    .card.effect__click.flipped .card__back {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+    }
+
+    /* YouTube Icon on search realignment */
+
+    body.search a.has-youtube-video .youtube-play-icon {
+        height: 50%;
+    }
+
+    #money-in-your-pocket-email .email-sign-up {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0.5em;
+    }
+
+    .money-in-your-pocket-new-subscriber img {
+        margin: 0px auto!important;
+    }
+
+    .money-in-your-pocket-new-subscriber .money-in-your-pocket-blurb,
+    .money-in-your-pocket-already-subscribed .money-in-your-pocket-blurb{
+        vertical-align: middle!important;
+    }
+
+/* Media Queries */
+
+
+    @media ( max-width: 479px ) {
+
+        #money-in-your-pocket-thumbs {
+            padding: 0px;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
+        #money-in-your-pocket-thumbs .money-in-your-pocket-blurb {
+            font-size: 1.35em;
+            margin-top: 10px;
+            margin-bottom: 0px;
+
+        }
+
+        #money-in-your-pocket-thumbs img {
+            height: 50px!important;
+            width: auto!important;
+            padding: 0 10px!important;
+        }
+
+
+        /* thumbs specificity override */
+        .post-page .single-post-content .single-post-content-inner img.money-in-your-pocket.thumbs-up, .post-page .single-post-content .single-post-content-inner img.money-in-your-pocket.thumbs-down {
+            padding: 0 5%;
+        }
+
+
+        #money-in-your-pocket-email .money-in-your-pocket-blurb {
+            font-size: 1.05em;
+            text-align: left;
+            margin-left: -2%;
+            width: 95%;
+
+        }
+
+        #money-in-your-pocket-email form {
+            margin-left: -20%;
+            width: 110%;
+        }
+
+        #money-in-your-pocket-email .email-sign-up img.thumbs-up-error {
+            height: auto;
+            width: auto;
+            max-width: 45px;
+            margin: 0px;
+        }
+
+        /*
+        Already subscrbied:
+         */
+        #money-in-your-pocket .money-in-your-pocket-already-subscribed .money-in-your-pocket-blurb{
+            font-size: 1.2em;
+        }
+
+        #money-in-your-pocket .money-in-your-pocket-already-subscribed img.thumbs-up-error {
+            margin-top: 10px!important;
+            max-width: 50px!important;
+        }
+
+        /*
+        Thank you:
+         */
+        #money-in-your-pocket .money-in-your-pocket-new-subscriber img {
+            margin-top: 10px!important;
+        }
+
+        /*
+        Hide btn:
+         */
+        img.money-in-your-pocket-hide {
+            right: 15px;
+        }
+
+    }
+
+    /*
+    iPhone 5
+     */
+    @media (max-width: 321px) {
+        #money-in-your-pocket-thumbs .money-in-your-pocket-blurb {
+            font-size: 1.2em;
+        }
+
+        img.money-in-your-pocket-hide {
+            right: 10px;
+        }
+
+        #money-in-your-pocket-email .money-in-your-pocket-blurb {
+            max-width: 40px;
+        }
+    }
+
+
+@media ( min-width: 480px ) and ( max-width: 767px ) {
+
+        #money-in-your-pocket-thumbs {
+            padding: 0px;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
+        #money-in-your-pocket-thumbs .money-in-your-pocket-blurb {
+            font-size: 1.55em;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+
+        #money-in-your-pocket-thumbs img {
+            height: 60px!important;
+            width: auto!important;
+            padding: 0 10px!important;
+        }
+
+        .money-in-your-pocket-blurb-second-line-small {
+            display: block;
+        }
+
+        #money-in-your-pocket-email .money-in-your-pocket-blurb {
+            font-size: 1.20em;
+            text-align: left;
+            margin-left: -5%;
+            width: 95%;
+        }
+
+        #money-in-your-pocket-email .email-sign-up img.thumbs-up-error {
+            height: auto;
+            width: auto;
+            max-width: 50px;
+            margin: 0px;
+        }
+
+        #money-in-your-pocket-email form {
+            margin-left: -20%;
+            width: 110%;
+
+        }
+
+        img.money-in-your-pocket-hide {
+            position: absolute;
+            right: 16px;
+            top: 6px;
+        }
+
+        /*
+        Already subscribed:
+         */
+        #money-in-your-pocket .money-in-your-pocket-already-subscribed .money-in-your-pocket-blurb {
+            font-size: 1.2em;
+        }
+
+        #money-in-your-pocket .money-in-your-pocket-already-subscribed img.thumbs-up-error {
+            margin-top: 10px!important;
+            max-width: 50px!important;
+        }
+
+        /*
+        Thank you:
+         */
+        #money-in-your-pocket .money-in-your-pocket-new-subscriber img {
+            margin-top: 10px!important;
+        }
+
+    }
+
+    @media ( min-width: 768px ) {
+        #money-in-your-pocket {
+            height: 120px;
+        }
+        .money-in-your-pocket-blurb {
+            display: inline-block;
+            font-size: 1.65em;
+            margin-right: 20px;
+        }
+
+        /* Thumbs up and down */
+
+        #money-in-your-pocket-thumbs {
+            padding: .5em;
+        }
+
+        #money-in-your-pocket-thumbs .money-in-your-pocket-blurb {
+            max-width: 60%;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        /* thumbs specificity override */
+        .post-page .single-post-content .single-post-content-inner img.money-in-your-pocket.thumbs-up, .post-page .single-post-content .single-post-content-inner img.money-in-your-pocket.thumbs-down {
+            padding: 0 12.5px;
+        }
+
+        /* Thumbs up step 2 */
+        .post-page .single-post-content .single-post-content-inner img.thumbs-up-error {
+            display: inline-block;
+        }
+
+        #money-in-your-pocket .thumbs-up-error {
+            margin-top: 10px;
+        }
+
+        #money-in-your-pocket-email .money-in-your-pocket-blurb {
+            width: 100%;
+        }
+
+        #money-in-your-pocket-thumbs .thumbs-up, #money-in-your-pocket-thumbs .thumbs-down {
+            width: 107px;
+        }
+
+        /* Email Signup */
+        #money-in-your-pocket-email .email-sign-up {
+            margin: 1em 1em 1em .25em;
+        }
+
+        img.money-in-your-pocket-hide {
+            top: 3px;
+            right: 10px;
+            width: 12px;
+        }
+
+        #money-in-your-pocket form input[type="email"] {
+            width: 85%;
+        }
+
+        #money-in-your-pocket-email .money-in-your-pocket-blurb {
+            font-size: 1.188em;    
+            text-align: left;
+        }
+
+        .money-in-your-pocket-blurb-second-line {
+            display: block;
+        }
+
+        #money-in-your-pocket form {
+            display: inline-block;
+            width: 95%;
+            margin: 10px 5% 0 0;
+        }
+
+        #money-in-your-pocket form input[type="submit"] {
+            width: 90px;
+        }
+
+        /* Already Subscribed */
+
+        #money-in-your-pocket .money-in-your-pocket-already-subscribed {
+            margin: 20px;
+        }
+
+        #money-in-your-pocket .money-in-your-pocket-already-subscribed .money-in-your-pocket-blurb {
+            text-align: left;
+            font-size: 1.5em;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        /* Thank You */
+
+        .money-in-your-pocket-new-subscriber {
+            margin: 20px;
+            text-align: left;
+        }
+
+        .money-in-your-pocket-new-subscriber .money-in-your-pocket-blurb {
+            margin: 0 20px 0;
+            font-size: 2em;
+        }
+
+        .money-in-your-pocket-new-subscriber img {
+            display: inline-block!important;
+            margin: 0px!important;
+            position: relative;
+
+        }
+
+    }
+
+    @media ( min-width: 992px ) and ( max-width: 1199px ) {
+        #money-in-your-pocket-email .email-sign-up img.thumbs-up-error {
+            height: 77px;
+            width: 77px;
+        }
+
+    }
+
+    @media ( min-width: 992px ) {
+
+        #money-in-your-pocket {
+            height: 100px;
+        }
+
+        .money-in-your-pocket-blurb {
+            font-size: 1.45em;
+        }
+
+        #money-in-your-pocket-thumbs .thumbs-up, #money-in-your-pocket-thumbs .thumbs-down {
+            width: 66px;
+            height: 66px;
+            margin: 10px 5px;
+        }
+
+        /* thumbs specificity override */
+        .post-page .single-post-content .single-post-content-inner img.money-in-your-pocket.thumbs-up, .post-page .single-post-content .single-post-content-inner img.money-in-your-pocket.thumbs-down {
+            padding: 0;
+        }
+
+        /* Email Signup */
+
+        #money-in-your-pocket form input[type="email"], #money-in-your-pocket form input[type="submit"] {
+            height: 35px;
+            padding-top: 3px;
+        }
+        
+        #money-in-your-pocket form input[type="submit"] {
+            font-size: 16px;
+            padding: 4px;
+        }
+
+        #money-in-your-pocket .thumbs-up-error {
+            margin-top: 0;
+        }
+
+        #money-in-your-pocket-email .money-in-your-pocket-blurb {
+            font-size: 1em;
+        }
+
+        #money-in-your-pocket form {
+            display: inline-block;
+            width: 100%;
+        }
+
+        #money-in-your-pocket-email .email-sign-up img.thumbs-up-error, #money-in-your-pocket .money-in-your-pocket-already-subscribed > img.thumbs-up-error {
+            width: 77px;
+        }
+
+        /* Already Subscribed */
+
+        #money-in-your-pocket .money-in-your-pocket-already-subscribed {
+            margin: 10px;
+        }
+
+        #money-in-your-pocket .money-in-your-pocket-already-subscribed .money-in-your-pocket-blurb {
+            font-size: 1.3em;
+        }
+
+        /* Thank You */
+
+        .money-in-your-pocket-new-subscriber {
+            margin: 12.5px;
+        }
+
+        .money-in-your-pocket-new-subscriber .money-in-your-pocket-blurb {
+            top: -5px;
+            position: relative;
+            font-size: 1.75em;
+        }
+
+
+    }
+
+    @media ( min-width: 1200px ) {
+
+        .money-in-your-pocket-blurb {
+            font-size: 1.7em;
+        }
+
+        #money-in-your-pocket-thumbs .thumbs-up, #money-in-your-pocket-thumbs .thumbs-down {
+            margin: 10px 15px;
+        }
+
+        /* Email Signup */
+
+        #money-in-your-pocket-email .email-sign-up img.thumbs-up-error, #money-in-your-pocket .money-in-your-pocket-already-subscribed > img.thumbs-up-error {
+            width: 77px;
+        }
+
+        #money-in-your-pocket-email .email-sign-up {
+            margin: .9em 1em 1em .25em;
+        }
+
+        #money-in-your-pocket-email .money-in-your-pocket-blurb {
+            font-size: 1.2em;
+        }
+
+        /* Already Subscribed */
+
+        #money-in-your-pocket .money-in-your-pocket-already-subscribed {
+            margin: 7px;
+        }
+
+
+        #money-in-your-pocket .money-in-your-pocket-new-subscriber {
+            margin-left: 21px;
+        }
+
+    }
+    
+@media ( max-width: 991px )  {
+
+    p.email-privacy-policy-blurb-purple {
+        margin: 10px 0 0;
+    }
+    
+}
+
+@media ( min-width: 992px )  {
+    /* Privacy Policy Update */
+    .newsletter-social-block .newsletter-stats {
+        padding: 6px 20px 0 20px;
+    }
+
+}
+
+/*
+Sign up newsletter - Input Box Centering ; BG-200
+ */
+@media (min-width: 992px) {
+    .category-page .newsletter-form > div.newsletter-form-form,
+    .single-post .newsletter-form > div.newsletter-form-form {
+        padding-right: 40px;
+    }
+}
+
+/**** UNIVERSITY ECOURSE LANDING PAGE TEMPLATE ****/
+
+.page-template-university-ecourse .social-share-bottom {
+    padding:10px 0 25px 0;
+    background:#f6f6f6;
+}
+
+.page-template-university-ecourse .social-share-bottom em.emphasized-text {
+    font-size:18px;
+}
+
+.page-template-university-ecourse .social-share-bottom p {
+    font-size:22px;
+    font-family:'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    text-transform:uppercase;
+    color:#342c58;
+    margin-bottom:15px;
+}
+
+.page-template-university-ecourse .social-share-bottom::before {
+    content: url(../images/university-dollar.png);
+    margin-top: -30px;
+    margin-right: 20px;
+    margin-left: -200px;
+    position: absolute;
+}
+
+.page-template-university-ecourse .row-full {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+}
+
+.page-template-university-ecourse .purple-bg {
+    background:url('../images/university-purple-bg-1200px.png');
+    color:#fff;
+    height:220px;
+    background-size: 100% 101%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.page-template-university-ecourse .purple-bg .top-dollar{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.page-template-university-ecourse .purple-bg .bottom-dollar{
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+
+.page-template-university-ecourse .purple-bg h3{
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.page-template-university-ecourse .purple-bg p{
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #fff;
+}
+
+.page-template-university-ecourse .university-header{
+        margin-top: 20px;
+        max-width:100%;
+}
+
+.page-template-university-ecourse .university-logo{
+    margin-top: 30px;
+    max-width:165px;
+}
+
+.page-template-university-ecourse .title-with-separator{
+    margin-bottom:0;
+}
+
+.page-template-university-ecourse .separator{
+    max-width:120px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.page-template-university-ecourse em.emphasized-text{
+    font-family: 'Crimson Text', serif;
+    color: #000;
+    font-size: 26px;
+    margin-top: 20px;
+    display: block;
+}
+
+.page-template-university-ecourse p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.page-template-university-ecourse .purple-bg .row{
+    width:99%;
+    margin:0 auto;
+    padding:0 10px;
+}
+
+.page-template-university-ecourse .purple-bg .list-item{
+    padding: 0 10px;
+    width: 20%;
+    float:left;
+}
+
+.page-template-university-ecourse .purple-bg .list-item img{
+    float:left;
+    padding-right:5px;
+    padding-top:5px;
+}
+
+.page-template-university-ecourse .purple-bg .list-item p span{
+    overflow: hidden;
+    text-align: left;
+    display:block;
+}
+
+.page-template-university-ecourse .yesmailForm input.has-error::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #FF0000;
+}
+
+.page-template-university-ecourse .yesmailForm input.has-error::-moz-placeholder { /* Firefox 19+ */
+    color: #FF0000;
+}
+
+.page-template-university-ecourse .yesmailForm input.has-error:-ms-input-placeholder { /* IE 10+ */
+    color: #FF0000;
+}
+
+.page-template-university-ecourse .yesmailForm input.has-error:-moz-placeholder { /* Firefox 18- */
+    color: #FF0000;
+}
+
+.page-template-university-ecourse .form-success-message {
+    color: #2bbab5;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 26px;
+    padding: 60px 0;
+    margin: 0;
+}
+
+.page-template-university-ecourse .form-success-btn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: 0;
+    outline: 0;
+    background: #2bbbb3;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.page-template-university-ecourse .form-success-btn img {
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+
+
+@media screen and ( max-width: 992px ) and ( min-width: 768px ) {
+    .page-template-university-ecourse .purple-bg {
+        background:url('../images/university-purple-bg-992px.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height:auto;
+    }
+    .page-template-university-ecourse .flex-items{
+        display:flex;
+    }
+    .page-template-university-ecourse .purple-bg .list-item{
+        padding: 1px 16px;
+        width: 33%;
+        margin: 0 auto;
+    }
+    .page-template-university-ecourse .purple-bg .row .flex-items:nth-of-type(1) p{
+        margin-bottom:15px;
+    }
+    .page-template-university-ecourse .purple-bg .row .flex-items:nth-of-type(2) p{
+        margin-bottom:35px;
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:481px) {
+    .page-template-university-ecourse .purple-bg{
+        background:url('../images/university-purple-bg-768px.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height:auto;
+        margin-left:5px;
+    }
+    .page-template-university-ecourse .flex-items{
+        display:flex;
+    }
+    .page-template-university-ecourse .purple-bg .list-item{
+        padding: 1px 16px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .page-template-university-ecourse .purple-bg .row .flex-items:nth-of-type(1) p{
+        margin-bottom:15px;
+    }   
+    .page-template-university-ecourse .purple-bg .row .flex-items:nth-of-type(2) p{
+        margin-bottom:35px;
+    }
+    .page-template-university-ecourse .purple-bg .top-dollar{
+        top:4px;
+    }
+}
+
+@media screen and ( max-width:480px ) {
+    .page-template-university-ecourse .purple-bg{
+        background:url('../images/university-purple-bg-480px.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height:auto;
+        margin-left: 5px;
+    }
+    .page-template-university-ecourse .purple-bg .list-item{
+        width: 100%;
+    }
+}
+/**** END UNIVERSITY ECOURSE LANDING PAGE TEMPLATE ****/

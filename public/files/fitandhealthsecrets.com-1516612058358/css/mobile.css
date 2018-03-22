@@ -1,0 +1,176 @@
+       html, body {
+
+            font-size: 14px;
+
+        }
+
+        body {
+
+            background-color: #F1F1F1; /#78acd7
+
+            font-family: Tahoma, Geneva, sans-serif;
+
+        }
+
+        .wrapper {
+
+                        box-shadow: 1px 1px 8px rgba(0,0,0,0.5);                    }
+
+        @media only screen and (min-width: 1030px) {
+
+            .wrapper {
+
+                max-width: 980px;
+
+            }
+
+        }
+
+        #headerBox{
+
+            background-color: rgba(255,255,255,1);
+
+        }
+
+        #headerTitle {
+
+            font-family: 'Shadows Into Light Two';
+
+            color: #77add7;
+			
+			text-align:center;
+
+        }
+
+        #headerText {
+
+            font-family: Tahoma, Geneva, sans-serif;
+
+            color: #000000;
+
+        }
+
+        .progress-wrapper {
+
+            width: 90%;
+
+            height: 20px;
+
+            border: 2px solid #333333;
+
+            background-color: #999999;
+
+            margin: 10px auto;
+
+            overflow: hidden;
+
+        }
+
+        .progress-bar{
+
+            width: 0%;
+
+            height: 20px;
+
+            border: none;
+
+            background-color: #2396F1;
+
+            margin: 0;
+
+            position: relative;
+
+            left: 0;
+
+            top: 0;
+
+        }
+
+        #surveyBox {
+
+            background-color: #2da8f6; // rgba(0,0,0,1)
+
+        }
+
+        .questionStep header, .evalTitle, #surveyEnd header h4 {
+
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+
+			font-size: 150%;
+
+            color: #000000; // #ffc341
+
+        }
+
+        .questionStep h6, .evalText, #surveyEnd section {
+
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+
+            color: #ffffff;
+
+        }
+
+        .yesBtn {
+
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+
+            background-color: #ffc341;
+
+            color: #000000;
+
+        }
+
+        .noBtn {
+
+            font-family: ;
+
+            background-color: #ffc13c;
+
+            color: #000000;
+
+        }
+
+        .bold {
+
+            font-weight: bold;
+
+        }
+		
+		.checkMark, .decimal {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.checkMark li {
+  background: url("../images/marker.png") no-repeat scroll left center transparent;
+  font-family: "Trebuchet MS", Tahoma;
+  font-size: 15px;
+  padding: 6px 5px 6px 25px;
+  line-height: 17px;
+}
+}
+
+.decimal li {
+  background: url("../images/decimal.png") no-repeat scroll 0 0 transparent;
+  color: #ccc;
+  font-family: "Trebuchet MS", Tahoma;
+  font-size: 14px;
+  padding: 7px 5px 7px 42px;
+  line-height: 17px;
+}
+}
+
+.decimal li.one {
+  background-position: 1px 8px;
+}
+
+.decimal li.two {
+  background-position: 1px -115px;
+}
+
+.decimal li.three {
+  background-position: 1px -240px;
+}
+

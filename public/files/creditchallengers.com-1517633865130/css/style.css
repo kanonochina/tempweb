@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	padding:0;
+	background:#fff;
+	color:#000;
+	text-align:center;
+	font-family: 'geomanistregular';
+	}
+div, ul, h1, h2, h3, h4, h5, li, p, img, form, input, textarea {margin:0;padding:0;}
+header, section, footer, aside, nav, main, article, figure {display: block;}
+table, tr, td {border:0;}
+a{outline: none; color:#333; text-decoration:none;}
+a:hover {outline: none; text-decoration:none;}
+img {border:none;}
+li {list-style:none;}
+*{box-sizing:border-box;}
+.resp-img{max-width:100%;}
+.for-desk{display:block;}
+.for-mob{display:none;}
+
+.clearall{
+	clear:both;
+	font-size:1px;
+	line-height:1px;
+	height:1px;
+	}
+.container{
+	width:1170px;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+	}
+
+.bnr-bg{
+	float:left;
+	width:100%;
+	background:url(../images/brn-bg.jpg) center top repeat-x;
+	background-size:cover;
+}
+.top-sec{
+	float:left;
+	width:100%;
+	border-bottom:1px solid #5d616b;
+}
+.logo{
+	float:left;
+	margin-top:10px;
+}
+
+.top-rgt{
+	float:right;
+	width:68.37%;
+	padding:25px 0;
+	text-align:right;
+}
+.top-rgt p{
+	font-size:15px;
+	font-weight:400;
+	color:#fefefe;
+	display:inline-block;
+}
+ul.top-list{
+	display:inline-block;
+	text-align:center;
+}
+ul.top-list li{
+	display:inline-block;
+	padding:0 5px;
+}
+ul.top-list li{
+	vertical-align:bottom;	
+}
+.top-list-logo{
+	max-width:388px;
+	width:100%;
+}
+.bnr-sec{
+	float:left;
+	width:100%;
+	padding:40px 0;
+}
+.bnr-lft{
+	float:left;
+	width:60%;
+}
+.bnr-hdg-txt{
+	font-size:50px;
+	line-height:50px;
+	color:#fff;
+	text-transform:uppercase;
+	font-family: 'geomanistbold';
+}
+.bnr-hdg-txt span{
+	color:#0d98d7;
+	font-size: 40px;
+}
+.brn-txt1{
+	font-size:20px;
+	line-height:26px;
+	color:#fff;
+	font-family: 'geomanistmedium';
+}
+ul.bnr-list{
+	float:left;
+	width:100%;
+	padding:20px 0;
+}
+ul.bnr-list li{
+	width:33.3%;
+	float:left;
+	position:relative;
+}
+ul.bnr-list li .bnr-sepr1, ul.bnr-list li .bnr-sepr2{
+	position:absolute;
+	top:30px;
+}
+ul.bnr-list li .bnr-sepr1{left:-30px;}
+ul.bnr-list li .bnr-sepr2{right:-30px;}
+
+ul.bnr-list li p{
+	font-size:20px;
+	line-height:20px;
+	color:#fff;
+	font-family: 'geomanistmedium';
+}
+ul.bnr-list li p span{
+	color:#0d98d7;
+}
+.bnr-form{
+	float:left;
+	width:100%;
+	border:1px solid #0d98d7;
+	border-radius:8px;
+}
+.frm-hdg-txt{
+	float:left;
+	width:100%;
+	background:#0d98d7;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	color:#fff;
+	padding:15px 0;
+}
+.frm-hdg-txt p:nth-child(1){
+	font-size:30px;
+	line-height:30px;
+	font-family: 'geomanistbold';
+	text-transform:uppercase;
+}
+.frm-hdg-txt p:nth-child(2){
+	font-size:26px;
+	line-height:26px;	
+}
+.frm-cont{
+	padding:30px 0;
+	float:left;
+	width:100%;
+}
+
+.frm-field input[type="text"],
+.frm-field input[type="email"],
+.frm-field input[type="number"],
+.frm-field input[type="tel"]
+{
+	width:90%;
+	height:50px;
+	border-radius:5px;
+	border:none;
+	outline:none;
+	padding:0 20px;
+	font-size:16px;
+}
+.frm-field input[type="text"]:nth-child(2){
+	margin-left:20px;
+}
+.frm-txt{
+	font-size:12px;
+	color:#fff;
+	font-family: 'geomanistlight';
+}
+.frm-btn{
+	/*margin-top:20px;*/
+}
+.step4 .lst-sec{
+	margin:0 auto;
+	max-width:480px;
+	width:100%;
+	padding:0 10px;
+}
+.step4 .lst-sec p{
+	font-size:18px;
+	float:left;
+	color:#fff;
+	width:50%;
+	text-align:left;
+}
+.step4 .lst-sec select, 
+.frm-select {
+	background:url(../images/selec-btn.png) 95% center #fff no-repeat;
+	border:1px solid #808080;
+	border-radius:5px;
+	font-size:16px;
+	color:#6f6f6f;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	padding:10px;
+	width:90%;
+	text-align: center;
+	margin: 10px auto 0;
+	/*float:right;*/
+}
+.frm-txt2{
+	font-size:13px;
+	font-family: 'geomanistlight';
+	color:#fff;
+	padding:10px 15px 0;
+}
+.frm-txt2 a, .frm-txt2 a:hover{
+	color:#28aae5;
+	text-decoration:underline;
+}
+.bnr-rgt{
+	float:left;
+	width:40%;
+}
+.bnr-rgt p{	
+	font-family: 'Open Sans', sans-serif;
+	font-size:18px;
+	line-height:23px;
+	color:#fff;
+	font-style:italic;
+	padding:10px 15px 0 50px;
+	text-align:left;
+}
+.sec1{
+	float:left;
+	width:100%;
+	padding:30px 0 0;
+}
+
+.sec-txt1{
+	font-size:32px;
+	line-height:38px;
+	color:#0d5393;
+	font-family: 'geomanistmedium';
+}
+.sec1-list{
+	display:inline-block;
+	background:#fbfbfb;
+	text-align:left;
+	padding:15px 10px;
+	border:1px solid #f3f3f3;
+	border-radius:8px;
+	width:700px;
+	margin:20px auto 0;
+}
+.sec1-list ul{
+	float:left;
+	width:25%;
+}
+.sec1-list ul li{
+	display:inline-block;
+	background:url(../images/sec1-list-img.png) left center no-repeat;
+	font-size:18px;
+	color:#464646;
+	padding-left:20px;
+	margin:2px 15px;
+}
+
+.footer{
+	float:left;
+	width:100%;
+	border-top:2px solid #f1f1f1;
+	padding:30px 0;
+}
+.footer p{
+	font-size:14px;
+	font-family: 'geomanistlight';
+	color:#929292;
+}
+ .footer p a{
+	color:#0d5393;	
+	text-decoration:underline; 
+}
+
+
+
+
+.frm-field{
+	/*float:left;*/
+	width:100%;
+	/*margin: 0 0 20px 0;*/
+}
+
+
+.frm-field > div {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+}
+.frm-field > div:nth-child(2) {
+	margin-left: 20px;
+}
+
+.frm-field:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+ul.wizard {
+	display: block;
+	clear: both;
+	margin: 25px auto;
+	padding: 0;
+}
+
+input.error, select.error {
+	border: 1px solid #E70000 !important;
+	background-color: #FFCBCB;
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+input.valid, select.valid {
+	border: 1px solid #3EC180 !important;
+	background-color: #DFF8E7;
+}
+
+label.error {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	background-color: #E70000;
+	color: #fff;
+	font-size: 14px;
+	padding: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+.frm-btn, .frm-btn:active, .frm-btn:visited {
+	background-color: #F77C2C;
+	color: #fff !important;
+	border: 2px solid #A1501C;
+	text-shadow: 1px 1px 0 #A1501C;
+	font-size: 34px;
+	padding: 10px 50px;
+	border-radius: 10px;
+	text-transform: uppercase;;
+	font-weight: bold;
+	text-decoration: none !important;
+}
+.frm-btn:hover {
+	color: #fff;
+}
+
+.frm-btn.frm-btn-sm {
+	font-size: 20px;
+	padding: 10px 30px;
+}
+
+.clearfix {
+	clear: both;
+	display: block;
+	float: none;
+}
+.frm-field p {
+	font-size: 18px;
+	color: #fff;
+}

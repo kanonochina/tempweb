@@ -1,0 +1,1771 @@
+/* We Run Ads Custom CSS */
+
+/*********************************************
+**********************************************
+1.0  - General Typography
+2.0  - Header & Navigation
+3.0  - Buttons, Forms, & Backgrounds
+4.0  - Footer
+5.0  - Homepage
+6.0  - Testimonials
+7.0  - Our Team
+8.0  - Products
+9.0  - Contact Us
+10.0 - Apply
+11.0 - Thank You
+12.0 - Inner Circle
+13.0 - Media Queries
+*********************************************
+**********************************************/
+
+
+/*********************************************
+**********************************************
+1.0 - General Typography
+*********************************************
+**********************************************/
+
+body, h1, h2, h3, h4, h5, p {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 44px;
+    color: #011d36;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 26px;
+    color: #011d36;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 20px;
+    color: #011d36;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+p, li {
+    font-size: 18px;
+    color: #666666;
+    line-height: 1.7em;
+}
+
+.highlight {
+    color: #3ebbfc;
+}
+
+
+
+/*********************************************
+**********************************************
+2.0 - Header & Navigation
+*********************************************
+**********************************************/
+header {
+    position: relative;
+    z-index: 5;
+    box-shadow: 5px 0 18px rgba(0, 0, 0, .3);
+}
+
+.navbar-default {
+    background: #08253e;
+}
+
+.navbar-brand {
+    height: 100px;
+    padding: 7px 0 0;
+}
+
+.nav>li>a {    
+    padding: 0;
+    margin: 38px 0 0 45px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px; 
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    font-weight: bold;
+    background: none;
+}
+
+
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
+    color: #79cbff;
+    background: none;
+}
+
+.navbar-default a.navbar-btn,
+.navbar-default .navbar-nav>li>a.navbar-btn {
+    border: 2px solid transparent;
+    padding: 15px 25px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 22px 0 0 35px;
+    color: #fff;
+}
+
+#home .navbar-default a.navbar-btn,
+#home .navbar-default .navbar-nav>li>a.navbar-btn {
+    border: 2px solid #fff;
+    background: transparent;
+}
+
+.navbar-default a.navbar-btn,
+.navbar-default .navbar-nav>li.active>a.navbar-btn {
+    background: #f15927;
+}
+
+.navbar-default a.navbar-btn:hover,
+.navbar-default .navbar-nav>li>a.navbar-btn:hover,
+#home .navbar-default a.navbar-btn:hover,
+#home .navbar-default .navbar-nav>li>a.navbar-btn:hover {
+    background: #fff;
+    color: #08253e;
+    text-decoration: none;
+}
+
+
+/*********************************************
+**********************************************
+3.0 - Buttons, Forms, & Backgrounds
+*********************************************
+**********************************************/
+a.btn.btn-primary,
+button.btn.btn-primary {
+    text-transform: uppercase;
+    border-radius: 40px;
+    line-height: 1em;
+    padding: 25px 50px;
+    border: transparent;
+    background: #f15927;
+    font-weight: bold;
+    font-size: 22px;
+    box-shadow: 0 0 8px rgba(0,0,0,.5);
+}
+
+a.btn.btn-primary:hover,
+button.btn.btn-primary:hover {
+    background: #f96132;
+}
+
+a.btn.btn-primary.btn-blue,
+button.btn.btn-primary.btn-blue {
+    background: #078bce;
+    color: #fff!important;
+}
+
+a.btn.btn-primary.btn-blue:hover,
+button.btn.btn-primary.btn-blue:hover {
+    background: #0c9ae2;
+}
+
+a.btn.btn-primary.btn-dark,
+button.btn.btn-primary.btn-dark {
+    background: #08253e;
+}
+
+a.btn.btn-primary.btn-dark:hover,
+button.btn.btn-primary.btn-dark:hover {
+    background: #0e3556;
+}
+
+input, select, textarea {
+    display: block;
+    margin: 0 auto 15px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #fff;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+}
+
+form button.btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.input-group-addon {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    color: #b7b7b7;
+}
+
+.card {
+    padding: 30px 20px;
+    margin: 0 0 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.card a {
+    opacity: 0;
+    color: #078bce;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+}
+
+.card:hover {
+    box-shadow: 0 0 27px rgba(0,0,0, .2);
+}
+
+.card:hover a {
+    opacity: 1;
+}
+
+#breadcrumb {
+    margin: 30px 0 0;
+}
+
+#breadcrumb p {
+    color: #f15927;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#breadcrumb a,
+#breadcrumb span {
+    color: #08253e;
+    font-weight: normal;
+}
+
+#content {
+    padding-top: 80px;
+}
+
+
+/*********************************************
+**********************************************
+4.0 - Footer
+*********************************************
+**********************************************/
+
+#get-started {
+    margin-top: 100px;
+    padding: 100px 0 150px;
+    background: url(../images/Buildings-Footer.png), url(../images/WRASplash.png), #078bce;
+    background-repeat: repeat-x, no-repeat;
+    background-position: bottom, center center;
+}
+
+#get-started h2,
+#get-started h3,
+#get-started p,
+#get-started li {
+    color: #fff;
+}
+
+footer {
+    background: #072f53;
+    padding: 60px 0;
+}
+
+footer .footer-nav {
+    margin-bottom: 40px;
+}
+
+footer .copyright {
+    border-top: 1px solid #375775;
+    color: #bcc7b3;
+    padding: 40px 0 0;
+}
+
+footer .copyright a, 
+footer .copyright a:hover {
+    color: #cee1f2;    
+}
+
+footer h5 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    font-size: 14px;
+}
+
+footer ul li a {
+    color: #cee1f2;
+    margin-top: 20px;
+    display: block;
+}
+
+footer ul li a:hover {
+    color: #cee1f2;
+    text-decoration: none;
+}
+
+footer .fa {
+    margin-right: 4px;
+}
+
+footer .fa-mobile-phone {
+    font-size: 20px;
+}
+
+footer .social-media ul li {
+    display: inline-block;
+}
+
+footer .social-media ul li a {
+    margin: 10px 15px 0 0;
+    border: 1px solid #ffffff30;
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 1em;
+    padding-top: 11px;
+}
+
+footer .social-media ul li a .fa {
+    margin-right: 0;
+}
+
+
+/*********************************************
+**********************************************
+5.0 - Homepage
+*********************************************
+**********************************************/
+#main-hero {
+    background: url(../images/Buildings.png), url(../images/HeroSplash.png), #011d36;
+    background-position: right bottom, top;
+    background-repeat: repeat-x, no-repeat;
+    padding: 110px 0;
+    margin-bottom: 20px;
+}
+
+#main-hero h1 {
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+#main-hero h4 {
+    color: #a8baca;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+}
+
+#main-hero .small {
+    color: #f15927;
+    margin: 10px 0 0 10px;
+}
+
+#main-hero img {
+    position: absolute;
+    right: 0;
+    top: -60px;
+}
+
+/* lines under hero*/
+#home #lines {
+    margin-bottom: 100px;
+    text-align: right;
+    padding: 0 0 0 20px;
+    overflow: hidden;
+}
+
+#home #introduction .card {
+    padding: 50px 20px 30px;
+    box-shadow: 0 0 15px rgba(0,0,0, .1);
+}
+    
+#introduction a.btn.btn-primary,
+#home #discovery a.btn.btn-primary {
+    margin-top: 20px;
+}
+
+#home #why-us {
+    margin: 100px 0 80px;
+    padding: 100px 0 260px;
+    background: url(../images/Buildings-White.png), url(../images/WhyUs.png), #011d36;
+    background-position: 0 101%, 0 50px;
+    background-repeat: repeat-x, no-repeat;
+}
+
+#home .dark-bg h2 {
+    color: #fff;
+}
+
+#home .dark-bg p {
+    color: #a8baca;
+    margin: 30px 0;
+}
+
+#home #requirements {
+    background: url(../images/Grass-White.png), url(../images/Requirements.png), #011d36;
+    background-position: 0 105%, bottom right;
+    background-repeat: repeat-x, no-repeat;
+    margin: 100px 0;
+    padding: 140px 0 210px;
+    position: relative;
+}
+
+#home #requirements .tabs {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 40px;
+    display: inline-block;
+    padding: 0;
+}
+
+#home #requirements .tabs li {
+    display: inline-block;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.15);
+    padding: 0 50px 15px;
+    margin: 0 -9px;
+    position: relative;
+}
+
+#home #requirements .tabs li a {
+    color: #fff;
+}
+
+#home #requirements .tabs li.active a {
+    color: #f15927;
+    font-weight: bold;
+}
+
+#home #requirements .tabs li:hover a {
+    text-decoration: none;
+}
+
+#home #requirements .tabs li.active {    
+    border-color: #f15927;
+}
+
+#home #requirements img {
+    display: block;
+    margin: 40px auto 0;
+}
+
+#home #requirements img.icon {
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    margin-left: -81px;
+}
+
+#home #requirements .triangle {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #f15927;
+    position: absolute;
+    top: 49px;
+    left: 50%;
+    margin-left: -12px;
+}
+
+#home #requirements .tabs li.active .triangle {    
+    display: block;
+}
+
+#home #testimonials {    
+    background: url(../images/Buildings-Blue.png), #072f53;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    margin: 100px 0;
+    padding: 100px 0;
+}
+
+#home #testimonials p {
+    margin: 0 auto;
+}
+
+.carousel-control {
+    background: none!important;
+}
+    
+#view-testimonials .item {
+    padding: 0 180px;
+    margin: 50px auto 70px;
+    display: none;
+    min-height: 330px;
+}
+
+#view-testimonials .item.active {
+    display: table;
+}
+
+#home #view-testimonials p {
+    font-size: 24px;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+}
+    
+#home #view-testimonials .carousel-inner .item:nth-child(2) p {
+    font-size: 20px;
+}
+
+#home #view-testimonials p:before {
+    content: ' ';
+    background: url(../images/LeftQuote.png);
+    width: 58px;
+    height: 45px;
+    position: absolute;
+    left: 150px;
+    top: 50%;
+    margin-top: -22.5px;
+}
+
+#home #view-testimonials p:after {
+    content: ' ';
+    background: url(../images/RightQuote.png);
+    width: 58px;
+    height: 45px;
+    position: absolute;
+    right: 150px;
+    top: 50%;
+    margin-top: -22.5px;
+}
+
+#home #view-testimonials .carousel-indicators {
+    position: inherit;
+    bottom: inherit;
+    left: inherit;
+    z-index: 15;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+    list-style: none;
+}
+
+#home #view-testimonials .carousel-indicators li {
+    position: relative;
+    max-width: 140px;
+    width: 100%;
+    height: auto;
+    margin: 0 -2px;
+    text-indent: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+    filter: grayscale(100%);
+}
+
+#home #view-testimonials .carousel-indicators li img {
+    width: 70%;
+    height: 70%;
+    padding-bottom: 20px;
+}
+
+#home #view-testimonials ol li.active img {
+    width: 100%;
+    height: 100%;
+    margin-top: -42px;
+}
+
+#home #view-testimonials ol li.active {
+    filter: grayscale(0);
+    border-color: #f15927;
+}
+
+#home #view-testimonials .triangle {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #f15927;
+    position: absolute;
+    top: 106px;
+    left: 50%;
+    margin-left: -12px;
+}
+
+#home #view-testimonials li.active .triangle,
+#home #view-testimonials li.active .name {    
+    display: block;
+}
+
+#home #view-testimonials .name {
+    display: none;
+    position: absolute;
+    color: #f15927;
+    top: 130px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 22px;
+    left: 0;
+}
+
+.carousel-control {
+    z-index: 20;
+}
+
+#home #discovery {
+    background: url(../images/Clouds.png);
+    background-repeat: no-repeat;
+}
+
+#home #discovery .card {
+    box-shadow: 0 0 15px rgba(0,0,0, .1);   
+    padding: 10px 20px 30px 70px;
+}
+
+#home #discovery ul,
+#get-started ul {
+    list-style: none;
+    padding: 0;
+}
+
+#home #discovery li,
+#get-started li {
+    margin-bottom: 10px;
+}
+
+#home #discovery .fa,
+#get-started .fa {
+    margin-right: 5px;
+}
+
+#home #discovery i.fa.fa-arrows-alt.fa-2x {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #088bce;
+}
+
+
+
+/*********************************************
+**********************************************
+6.0 - Testimonials
+*********************************************
+**********************************************/
+#testimonials #content {
+    background: url(../images/Buildings-Gray.png);
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    padding-bottom: 250px;
+    margin-bottom: -100px;
+}
+
+#testimonials .client {
+    margin-top: 100px;
+}
+
+#testimonials .client h4 {
+    font-weight: bold;
+}
+
+#testimonials .client:nth-child(odd) {
+    background: url(../images/ClientQuoteBG.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+#testimonials .client:nth-child(even) {
+    background: url(../images/ClientQuoteBGLeft.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+
+
+/*********************************************
+**********************************************
+7.0 - Our Team
+*********************************************
+**********************************************/
+
+#team .card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+
+#team .card img {
+    border: 5px solid #333;
+    border-radius: 200px;
+    margin-bottom: 10px;
+}
+
+#team .card:hover img {
+    border-color: #078cce;
+}
+
+#team .card:hover h3 {
+    color: #078cce;
+}
+
+#team .card hr {
+    height: 3px;
+    width: 50px;
+    border: none;
+    background: #333;
+}
+
+
+/*********************************************
+**********************************************
+8.0 - Products
+*********************************************
+**********************************************/
+
+#products #content {
+    background: url(../images/ProductLineBG.png), url(../images/Buildings-Gray.png);
+    background-position: center 550px, bottom center;
+    background-repeat: no-repeat, repeat-x;
+    padding-bottom: 250px;
+    margin-bottom: -100px;
+}
+
+#products .product {
+    background: #072f53;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .18);
+    padding: 50px 20px;
+    border-radius: 20px;
+    margin-top: 150px;
+}
+
+#products .product .description {
+    background: #0080d7;
+    margin: -50px -20px 40px;
+    padding: 30px 20px 20px;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+
+#products .product h3,
+#products .product h5,
+#products .product p,
+#products .product li {
+    color: #fff;
+}
+
+#products .product h3 {
+    margin-top: 0;
+}
+
+#products .product p {
+    font-size: 16px;
+}
+
+#products .product h5 {
+    font-weight: bold;
+}
+
+#products .product a {
+    text-align: center;
+}
+
+#products .product ul {
+    list-style: none;
+    padding: 0;
+}
+
+#products .product ul li {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+#products .product h5 ~ img {
+    margin: 0 0 20px;
+}
+
+#products .product .fa {
+    margin-right: 6px;
+}
+
+#products .product-img {
+    background: #fff;
+    width: 210px;
+    height: 210px;
+    padding: 65px;
+    border-radius: 220px;
+    margin: -135px auto 30px;
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.15);
+}
+
+#products .product .triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #0080d7;
+    position: absolute;
+    left: 30px;
+    bottom: -15px;
+}
+
+/*********************************************
+**********************************************
+9.0 - Contact Us
+*********************************************
+**********************************************/
+#contact #contact-form {
+    background: url(../images/Car.png), url(../images/Road.png), url(../images/Buildings-Faded.png), #f7f7f7;
+    background-repeat: no-repeat, repeat-x, repeat-x;
+    background-position: 80% 98%, bottom, center 90%;
+    padding: 80px 0 280px;
+    margin: 100px auto -100px;
+}
+
+#contact #contact-form form {
+    margin-top: 40px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    border: 1px solid #ddd;
+}
+
+#contact-form textarea {
+    display: block;
+    margin: 0 auto 15px;
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#contact .fa-3x {
+    font-size: 32px;
+    color: #777;
+}
+
+#contact h5 {
+    font-weight: bold;
+    margin: 20px auto 10px;
+}
+
+#contact .border {
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+}
+
+
+/*********************************************
+**********************************************
+10.0 - Apply
+*********************************************
+**********************************************/
+#apply #content {
+    background: url(../images/Buildings-Footer.png), url(../images/CircleBGLeft.png), url(../images/CircleBGRight.png);
+    background-repeat: repeat-x, no-repeat, no-repeat;
+    background-position: center bottom, left top, right bottom;
+    padding-bottom: 180px;
+}
+
+#application {
+    margin-top: 40px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,.12);
+    border-radius: 10px;
+    background: #fff;
+}
+
+#application .fa-user-circle {
+    color: #078bce;
+    float: left;
+    margin: 6px 10px 0 0;
+}
+
+#application h4 {
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#application form {
+    padding: 30px 80px;
+}
+
+#application form input,
+#application form select,
+#application form textarea {
+    border: 1px solid #cecece;
+}
+
+
+
+/*********************************************
+**********************************************
+11.0 - Thank You
+*********************************************
+**********************************************/
+#thanks #content {
+    background: url(../images/Buildings-Footer.png);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    padding: 80px 0 120px;
+}
+
+#thanks h1 {
+    font-size: 65px;
+    color: #f15927;
+    font-weight: bold;
+}
+
+#thanks h2 {
+    font-weight: normal;
+    font-size: 36px;
+    margin: 0;
+}
+
+#thanks h3 {
+    font-weight: normal;
+}
+
+#thanks .card {
+    padding: 50px 20px;
+    box-shadow: 0 0 15px rgba(0,0,0, .1);
+}
+
+#thanks .card a {
+    opacity: 1;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+
+
+/*********************************************
+**********************************************
+12.0 - Inner Circle
+*********************************************
+**********************************************/
+
+#inner-circle h1,
+#inner-circle-login h1 {
+    font-weight: bold;
+}
+
+#inner-circle-login #content {
+    background: url(../images/Buildings-Footer.png), url(../images/Buildings.png), url(../images/HeroSplash.png), #011d36;
+    background-position: bottom, center 110%, top;
+    background-repeat: repeat-x, repeat-x, no-repeat;
+    padding: 110px 0 180px;
+}
+
+#inner-circle #content {
+    background: url(../images/Buildings-Footer.png), url(../images/Buildings-Gray.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    padding: 0;
+    position: relative;
+    min-height: 1350px;
+}
+
+#inner-circle-login #content h1 {
+    color: #fff;
+}
+
+#inner-circle-login #content p {
+    font-size: 16px;
+    color: #708598;
+}
+
+#inner-circle-login form input {
+    border-radius: 100px;
+    font-style: italic;
+    color: #999999;
+    height: 70px;
+}
+
+#inner-circle #sidebar {
+    background: url(../images/Buildings-Footer.png), #00182e;
+    background-position: bottom right;
+    background-repeat: repeat-x;
+    padding: 30px 30px 70px;
+    margin: 0 0 -180px;
+    min-height: 1350px;
+}
+
+#inner-circle.lessons #sidebar {
+    margin: 0;
+}
+
+#inner-circle #sidebar .intro {    
+    background: #08253e;
+    padding: 20px 20px 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#inner-circle #sidebar p {
+    line-height: 1.3em;
+    margin-top: 15px;
+    color: #fff;
+}
+
+#inner-circle #sidebar ul {
+    list-style: none;
+    padding: 5px 0px 0px 20px;
+}
+
+#inner-circle #sidebar ul li a {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    border-bottom: 1px dashed #1d3a53;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#inner-circle #sidebar ul li:last-child a {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#inner-circle #sidebar ul li a i {
+    color: #078ace;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+#inner-circle #sidebar ul li:first-child a i {
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+#inner-circle #sidebar ul li:hover a,
+#inner-circle #sidebar ul li.active a {
+    color: #82d4ff;
+    text-decoration: none;
+}
+
+#inner-circle #sidebar ul li:hover a:after,
+#inner-circle #sidebar ul li.active a:after {
+    content: "\f105";
+    font: normal bold normal 12px/1 FontAwesome;
+    right: 0;
+    position: absolute;
+    top: 8px;
+    color: #00182e;
+    background: #f15927;
+    padding: 1px 6px;
+    border-radius: 30px;
+    height: 15px;
+    width: 15px;
+}
+
+#inner-circle #sidebar ul li:hover a i,
+#inner-circle #sidebar ul li.active a i {
+    text-shadow: 0 0 17px #1fb2ff;
+}
+
+#inner-circle #sidebar::-webkit-scrollbar {
+    width: 12px;
+}
+
+#inner-circle #sidebar::-webkit-scrollbar-track {
+    margin: 30px 0;
+    background: #163148;
+    border-radius: 10px;
+}
+
+#inner-circle #sidebar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background: #078ace;
+    height: 50px;
+}
+
+#inner-circle #main-area {
+    background: url(../images/Clouds.png);
+    background-repeat: no-repeat;
+    padding: 130px 0 180px;
+}
+
+#inner-circle.lessons #main-area {
+    padding: 30px 0 180px;
+}
+
+#inner-circle #main-area a {
+    color: #078ace;
+}
+
+#inner-circle #resources {
+    background: #f7f7f7;
+    padding: 15px;
+    margin: 50px 0;
+}
+
+#inner-circle #resources h3 {
+    margin: 0 0 5px;
+}
+
+#inner-circle #resources p {
+    margin: 0;
+}
+
+#inner-circle hr {
+    margin: 50px 0;
+}
+
+#inner-circle.lessons .key-point {
+    border: 1px solid #c7dce6;
+    border-radius: 50px;
+    margin: 25px auto;
+}
+
+#inner-circle.lessons .key-point i {
+    background: #078ace;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    color: #fff;
+    padding: 17px;
+    font-size: 26px;
+    text-align: center;
+    margin: -8px 8px -5px -5px;
+    float: left;
+}
+
+#inner-circle.lessons .key-point span {
+    display: block;
+    padding: 10px;
+    line-height: 24px;
+}
+
+#inner-circle.lessons .video {
+    margin-top: 20px;
+    background: url(../images/VideoStripes.png), #093358;
+    padding: 15px 15px 10px;
+}
+
+#twitter {
+    padding: 60px 0 0;
+    background: #072f53;
+}
+
+#twitter .container {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);    
+}
+
+#twitter img {
+    width: 100%;
+    max-width: 48px;
+    float: left;
+}
+
+#twitter .tweet {
+    margin-left: 70px;
+}
+
+#twitter .user {
+    font-size: 14px;
+    color: #fff;
+    padding-top: 5px;
+}
+
+#twitter .user .follow {
+    background: #26a0d3;
+    color: #fff;
+    padding: 2px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+#twitter .user .follow i {
+    margin-right: 5px;
+}
+
+#twitter .content {
+    font-size: 12px;
+    color: #fff;
+}
+
+#twitter .content a {
+    color: #636c89;
+}
+
+#twitter a:hover {
+    text-decoration: none;
+}
+
+#twitter .date,
+#twitter .controls {
+    font-size: 14px;
+    color: #588dbd;
+    font-weight: bold;
+}
+
+#twitter .controls a {
+    margin-left: 15px;
+}
+
+#twitter .carousel-indicators {
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    padding-top: 30px;
+}
+
+#twitter .carousel-indicators li {
+    border: none;
+    background: rgba(255, 255, 255, .1);
+    width: 8px;
+    height: 8px;
+}
+
+#twitter .carousel-indicators li.active {
+    background: rgba(255, 255, 255, .7);
+}
+
+#collapse-btn {
+  background-color: #f15927;
+  color: white;
+  padding: 20px;
+  margin: 0px !important;
+  width: 100%;
+  font-size: 16px;
+  border-bottom: 1px dashed #1d3a53;
+  text-decoration: none;
+}
+
+#collapse-btn:hover{
+  color: #79cbff;
+}
+
+#collapse-btn::after {
+    content: "\f105";
+    font: normal bold normal 12px/1 FontAwesome;
+    right: 15%;
+    position: absolute;
+    color: #f15927;
+    background: #00182e;
+    padding: 1px 6px;
+    border-radius: 30px;
+    height: 15px;
+    width: 15px;
+}
+
+/*********************************************
+**********************************************
+13.0 - Media Queries
+*********************************************
+**********************************************/
+@media screen and (min-width: 1200px) {
+    #home #introduction .card {
+        min-height: 556px;
+    }
+    
+    #home #features .card {
+        min-height: 429px;
+    }
+    
+    #home #discovery .card {
+        min-height: 428px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #home #introduction .card {
+        min-height: 646px;
+    }
+    
+    #home #features .card {
+        min-height: 487px;
+    }
+    
+    #home #discovery .card {
+        min-height: 576px;
+    }
+    
+    #view-testimonials .item {
+        min-height: 430px;
+    }
+    
+    #inner-circle.lessons .video iframe {
+        height: 300px;
+    }
+    
+    .navbar-brand img {
+        max-width: 150px;
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        font-size: 16px;
+    }
+    
+    .navbar-brand {
+        padding: 20px 0 0;
+    }
+    
+    #collapse-btn {
+      font-size: 12px;
+      min-width: 210px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    
+    .navbar-default .navbar-nav>li>a {
+        font-size: 13px;
+        margin: 38px 0 0 25px;
+    }
+    
+    .navbar-default .nav li a.navbar-btn {
+        margin: 22px 0 0 35px;
+    }
+    
+    .navbar-brand {
+        padding: 25px 0 0;
+    }
+    
+    .navbar-brand img {
+        max-width: 115px;
+    }
+}
+
+@media screen and (min-width: 992px) { 
+    #inner-circle .col-md-9 {
+        width: 70%;
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    footer .copyright .col-xs-12 {
+        text-align: center!important;
+        margin: 10px 0;
+    }
+    
+    #main-hero {
+        padding: 110px 0 480px;
+    }
+    
+    #main-hero img {
+        top: 0;
+        left: 50%;
+        margin-left: -193px;
+    }
+    
+    #home #lines {
+        margin-bottom: 150px;
+    }
+    
+    #risk-free .col-xs-12 {
+        text-align: center;
+    }
+    
+    #risk-free img,
+    #risk-free p {
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+    
+    .carousel-control {
+        display: none;
+    }
+    
+    #home #view-testimonials .carousel-indicators li {
+        max-width: 100px;
+    }
+    
+    #home #view-testimonials ol li.active img {
+        margin-top: -30px;
+    }
+    
+    #home #view-testimonials .triangle {
+        top: 78px;
+    }
+    
+    #home #view-testimonials .name {
+        top: 100px;
+        font-size: 16px;
+    }
+    
+    #get-started form {
+        margin-top: 30px;
+    }
+    
+    #products #content {
+        background: url(../images/Buildings-Gray.png);
+        background-position: bottom center;
+        background-repeat: repeat-x;
+    }
+    
+    #products .product {
+        margin: 40px 0 0;
+    }
+    
+    #products .product .description img {
+        margin: 0 auto 30px;
+    }
+    
+    #view-testimonials .item,
+    #view-testimonials .item.active {
+        padding: 0;
+    }
+
+    #home #view-testimonials p {
+        font-size: 18px;
+    }
+    
+    #home #view-testimonials .carousel-inner .item:nth-child(2) p {
+        font-size: 16px;
+    }
+    
+    #home #view-testimonials p:before {
+        left: 0;
+    }
+
+    #home #view-testimonials p:after {
+        right: 0;
+    }
+    
+    #home #requirements {
+        padding: 120px 0 450px;
+        margin-top: 50px;
+    }
+    
+    #inner-circle #sidebar {
+        margin-bottom: 50px;
+        max-height: 100%!important;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-width: 70vw;
+        position: absolute;
+        z-index: 90;
+        transition: all 0.3s;
+        visibility: visible;
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
+    }
+
+    #inner-circle #sidebar.active {
+        display: block;
+        transition: all 0.3s;
+        visibility: visible;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    
+    #inner-circle #sidebar-toggle {
+        position: absolute;
+        z-index: 91;
+        top: 20px;
+        font-size: 14px;
+        padding: 15px 25px 15px 15px;
+        border-radius: 0 50px 50px 0;
+        background: #08253e;
+        transition: all 0.3s;
+        visibility: visible;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    
+    #inner-circle #sidebar-toggle i {
+        margin-right: 8px;
+    }
+    
+    #inner-circle #sidebar.active ~ #sidebar-toggle {
+        background: #00182e;
+        transition: all 0.3s;
+        visibility: visible;
+        -webkit-transform: translate(70vw, 0);
+        transform: translate(70vw, 0);
+    }
+    
+    #inner-circle.lessons #main-area {
+        padding: 60px 0 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 36px;
+    }
+    
+    footer .footer-nav {
+        text-align: center;
+    }
+    
+    .navbar-default .navbar-toggle {
+        border: none;
+        margin-top: 28px;
+    }
+    
+    .navbar-default .navbar-toggle:focus, 
+    .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+
+    .navbar-toggle .icon-bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin-bottom: 6px;
+        border-radius: 2px;
+    }
+    
+    .navbar-default a.navbar-btn {
+        float: right;
+        margin: 22px 20px 0 0;
+    }
+    
+    .navbar-brand {
+        padding: 20px 0 0 20px;
+    }
+    
+    .navbar-brand img {
+        max-width: 200px;
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        margin: 15px 0 25px;
+    }
+    
+    #contact .border {
+        border: none;
+        padding: 30px 0;
+        margin: 30px auto;
+    }
+
+    #application form {
+        padding: 30px 20px;
+    }
+    
+    
+    #testimonials .client {
+        margin-top: 50px;
+    }
+
+    #testimonials .client:nth-child(odd),
+    #testimonials .client:nth-child(even) {
+        background: url(../images/ClientQuoteBG.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+    
+    #testimonials .client .text-right,
+    #testimonials .client .col-xs-12 {
+        text-align: center;
+    }
+    
+    #testimonials .client h4 {
+        margin-top: -20px;
+    }
+    
+    #main-hero {
+        padding: 50px 0 480px;
+    }
+    
+    #home #view-testimonials .carousel-inner .item {
+        min-height: 270px;
+    }
+    
+    #thanks h1 {
+        font-size: 48px;
+        font-weight: normal;
+    }
+    
+    #inner-circle.lessons .key-point {
+        min-height: 70px;
+    }
+    
+    #inner-circle.lessons .key-point i {
+        margin: 4px 8px 0 4px;
+    }
+    
+    #inner-circle.lessons .video iframe {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #home #view-testimonials .carousel-indicators li {
+        max-width: 70px;
+    }
+    
+    #home #view-testimonials ol li.active img {
+        margin-top: -20px;
+    }
+    
+    #home #view-testimonials .triangle {
+        top: 58px;
+    }
+    
+    #home #view-testimonials .name {
+        top: 85px;
+        line-height: 1.2em;
+    }
+    
+    #home #view-testimonials .carousel-inner .item {
+        min-height: 330px;
+    }
+    
+    #thanks .card a {
+        font-size: 16px;
+    }
+    
+    #inner-circle.lessons .video iframe {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-default a.navbar-btn {
+        margin: 25px 15px 0 0;
+        font-size: 12px;
+        padding: 12px 20px;
+    }
+    
+    .navbar-toggle {
+        margin-right: 8px;
+    }
+    
+    #home #requirements .tabs,
+    #home #requirements .tabs a {
+        font-size: 16px;
+    }
+    
+    #home #requirements .tabs li {
+        padding: 0 30px 15px;
+        margin: 0 -6px;
+    }
+    
+    #home #view-testimonials .carousel-inner .item {
+        min-height: 380px;
+    }
+    
+    footer .copyright small a {
+        display: block;
+        margin: 5px auto;
+    }
+    
+    footer .copyright small span {
+        display: none;
+    }
+    
+    a.btn.btn-primary, 
+    button.btn.btn-primary {
+        font-size: 16px;
+    }
+    
+    #twitter .controls.pull-right {
+        float: none!important;
+        display: block;
+        margin: 10px 0 0 -15px;
+    }
+    
+    #inner-circle.lessons .video iframe {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 440px) { 
+    .navbar-brand {
+        padding: 30px 0 0 15px;
+    }
+    
+    .navbar-brand img {
+        max-width: 160px;
+    }
+    
+    #home #view-testimonials .carousel-inner .item {
+        min-height: 435px;
+    }
+    
+    #thanks .card a {
+        font-size: 12px;
+    }
+    
+    #main-hero img {
+        max-width: 100%;
+    }
+    
+    #inner-circle.lessons .video iframe {
+        height: auto;
+    }
+    
+    #collapse-btn {
+      font-size: 10px;
+      min-width: 180px;
+    }
+}
+
+@media screen and (max-width: 390px) { 
+    .navbar-brand {
+        padding: 30px 0 0 15px;
+    }
+    
+    .navbar-brand img {
+        max-width: 110px;
+    }
+    
+    #home #view-testimonials .carousel-inner .item {
+        min-height: 505px;
+    }
+    
+    #collapse-btn {
+      padding: 10px;
+      font-size: 10px;
+      max-width: 110px;
+      min-width: inherit;
+      white-space: normal;
+    }
+}

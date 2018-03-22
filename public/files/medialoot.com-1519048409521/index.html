@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>Medialoot Startup UI Kit</title>
+		<link rel="stylesheet" href="css/frame.css" type="text/css" charset="utf-8">
+	</head> 
+
+
+	<body>
+	
+		<div class="live-preview-bar">
+			<a href="https://medialoot.com/"><img src="images/logo.png" alt="back to site" class="logo"></a>
+			
+			
+			<div class="social-links">
+			
+				<!-- Place this tag where you want the +1 button to render -->
+				<g:plusone size="medium"></g:plusone>
+				
+				<!-- Place this render call where appropriate -->
+				<div style="margin-right: -25px; margin-top:-1px ; display: inline-block;"><script type="text/javascript">
+				  (function() {
+				    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				    po.src = 'https://apis.google.com/js/plusone.js';
+				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+				  })();
+				</script></div>
+				
+				<iframe src="like.php" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px; padding-top: 0px;" allowtransparency="true"></iframe>
+				
+				
+				<div style="margin-right: -20px; margin-top:-5px ; display: inline-block;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://medialoot.com/item/bootstrap-startup-ui-kit/" data-text="Bootstrap Startup UI Kit" data-via="medialoot">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+
+			</div>
+			
+			<div class="buttons">
+			
+				<a href="https://medialoot.com/item/bootstrap-startup-ui-kit"><img src="images/get-item.png" alt="download this item" class="get-item"></a>
+				<a href="https://medialoot.com/preview/startup-ui-kit/index.html"><img src="images/remove-frame.png" alt="remove frame" class="remove-frame"></a>
+			
+			</div>
+		</div>
+		<iframe src="index_1.html" id="frame" width="100%" height="100%" frameborder="0"></iframe>
+		<script type="text/javascript">
+		function resizeIframe() {
+		    var height = document.documentElement.clientHeight;
+		    height -= document.getElementById('frame').offsetTop;
+		    
+		    // not sure how to get this dynamically
+		    height -= 0; /* whatever you set your body bottom margin/padding to be */
+		    
+		    document.getElementById('frame').style.height = height +"px";
+		    
+		};
+		document.getElementById('frame').onload = resizeIframe;
+		window.onresize = resizeIframe;
+		window.onload = resizeIframe;
+		</script>
+	
+	</body>
+
+</html>

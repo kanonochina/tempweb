@@ -1,0 +1,134 @@
+/* NOT JUST MODAL BUT EVERYTHING! */
+
+
+
+.easy-autocomplete, .easy-autocomplete input[type="text"] {
+	width: 95%;
+}
+form.update_post_here table {
+	width:100%;
+}
+.padded_row {
+	height: 40px;
+}
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
+
+#realtime_edits {
+	position: fixed;top: 40px;right: 40px;background: white;padding: 20px;border-radius: 10px;text-align: center;border: 1px solid gray; z-index: 10;
+}
+
+.save_current_homepage {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+#update_page_element {
+	font-size: 1.35em; 
+	/*margin: 0 auto;width: 90%;*/
+}
+
+#homepage_editor_modal_wrap {
+	position: absolute;
+	display: block;
+	z-index: 99999999;
+	background: #000;
+	opacity: 0.3;
+	text-align: center;
+}
+
+/* jqModal base Styling courtesy of;
+	Brice Burgess <bhb@iceburg.net> */
+
+/* The Window's CSS z-index value is respected (takes priority). If none is supplied,
+	the Window's z-index value will be set to 3000 by default (via jqModal.js). */
+
+
+.jqmWindow {
+    display: none;
+    
+    position: fixed;
+    top: 17%;
+    left: 10%;
+    
+    /*margin-left: -300px;*/
+    width: 80%;
+    
+    background-color: #EEE;
+    color: #333;
+    border-radius: 2px;
+    padding: 12px;
+}
+
+.jqmOverlay { background-color: #000; }
+
+.update_position {
+	background: #36c536;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 5px 10px;
+}
+
+.jqmClose {
+	/*float: right;*/
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 25px;
+}
+
+.clear_row {
+    background: red;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 2px 5px;
+    opacity: .6;
+    font-size: 14px;
+    float: right;
+    margin-top: 4px;
+	cursor: pointer;
+}
+
+.update_position:hover {
+	background-color: #21a021;
+}
+
+
+.jqmClose:hover {
+	background-color: gray;
+}
+
+.clear_row:hover {
+	opacity: 0.9;
+}
+
+.date_input {
+	width: 160px;
+}
+
+.editing_headline {
+    margin: -45px 0 10px 0;
+    display: block;
+    font-size: 14px;
+    color: #929292;
+    text-transform: capitalize;
+ }
+
+
+/* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
+* iframe.jqm {position:absolute;top:0;left:0;z-index:-1;
+	width: expression(this.parentNode.offsetWidth+'px');
+	height: expression(this.parentNode.offsetHeight+'px');
+}
+
+/* Fixed posistioning emulation for IE6
+     Star selector used to hide definition from browsers other than IE6
+     For valid CSS, use a conditional include instead */
+* html .jqmWindow {
+     position: absolute;
+     top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+}

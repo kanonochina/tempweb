@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Paint</title>
+		<link href="css/normalize.css" rel="stylesheet" type="text/css">
+		<link href="css/layout.css" rel="stylesheet" type="text/css">
+		<link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+		<script>
+			(function(){
+				var default_theme = "classic.css";
+				var theme_storage_key = "jspaint theme";
+				
+				var href_for = function(theme){
+					return "styles/themes/" + theme;
+				};
+				try{
+					var current_theme = localStorage[theme_storage_key];
+				}catch(e){}
+				
+				current_theme = current_theme || default_theme;
+				document.write('<link rel="stylesheet" type="text/css" href="' + href_for(current_theme) + '" id="theme-link" />');
+				
+				var theme_link = document.getElementById("theme-link");
+				var theme_style = document.createElement("style");
+				
+				self.set_theme = function(theme){
+					current_theme = theme;
+					var can_probably_refresh_to_switch = true;
+					try{
+						localStorage[theme_storage_key] = theme;
+					}catch(e){
+						can_probably_refresh_to_switch = false;
+					}
+					fetch(href_for(theme))
+					.catch(function(err){
+						show_error_message(
+							"Failed to load theme." +
+							(can_probably_refresh_to_switch ? " You can probably reload the app to finish switching themes." : ""),
+							err
+						);
+					})
+					// I'm gonna tell a funny joke, just wait..
+					.then(function(response) {
+						// Q: Why is this a separate step?
+						// A: Because response.text() returns a Promise!
+						// XD: 😂😂😂 WHO DID THIS 😂😂😂😂 XD
+						return response.text();
+					})
+					.then(function(css) {
+						if(theme_link){
+							theme_link.parentElement.removeChild(theme_link);
+							theme_link = null;
+						}
+						theme_style.textContent = css;
+						document.head.appendChild(theme_style);
+						$(window).triggerHandler("theme-load");
+					});
+				};
+				self.get_theme = function(){
+					return current_theme;
+				};
+			})();
+		</script>
+		<link rel="icon" href="images/16.png" sizes="16x16" type="image/png">
+		<link rel="icon" href="images/32.png" sizes="32x32" type="image/png">
+		<link rel="icon" href="images/48.png" sizes="48x48" type="image/png">
+		<link rel="icon" href="images/128.png" sizes="128x128" type="image/png">
+		<link rel="icon" href="windows.ico" sizes="16x16,32x32,48x48" type="image/icon">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+	</head>
+	<body>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/pep.js"></script>
+		<script src="js/canvas.toBlob.js"></script>
+		<script src="js/gif.js"></script>
+		<script src="js/palette.js"></script>
+		<script src="js/FileSaver.js"></script>
+		<script src="js/font-detective.js"></script>
+		<script src="js/helpers.js"></script>
+		<script src="js/storage.js"></script>
+		<script src="js/$Component.js"></script>
+		<script src="js/$Window.js"></script>
+		<script src="js/$MenuBar.js"></script>
+		<script src="js/$ToolBox.js"></script>
+		<script src="js/$ColorBox.js"></script>
+		<script src="js/$FontBox.js"></script>
+		<script src="js/$Handles.js"></script>
+		<script src="js/OnCanvasObject.js"></script>
+		<script src="js/Selection.js"></script>
+		<script src="js/TextBox.js"></script>
+		<script src="js/image-manipulation.js"></script>
+		<script src="js/tool-options.js"></script>
+		<script src="js/tools.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/manage-storage.js"></script>
+		<script src="js/help.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/menus.js"></script>
+		<script src="js/canvas-change.js"></script>
+		<script src="js/sessions.js"></script>
+	</body>
+</html>
